@@ -160,7 +160,7 @@ def decrypt(ciphertext, key):
     return ''.join(plaintext)
 
 # ======== Interface Streamlit ========
-st.markdown('<h1 style="color: #FFF455; font-size: 36px;">Chiffrement et Déchiffrement Vigenère</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="color: #740938; font-size: 36px;">Chiffrement et Déchiffrement Vigenère</h1>', unsafe_allow_html=True)
 
 # Choix de l'opération
 operation = st.radio(
@@ -170,7 +170,7 @@ operation = st.radio(
     format_func=lambda x: f"🔹 {x}"  # Ajoute une icône devant chaque choix
 )
 if operation == "Chiffrement":
-    st.markdown('<h2 style="color: #007F73;">Chiffrement Vigenère</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 style="color: #AF1740;">Chiffrement Vigenère</h2>', unsafe_allow_html=True)
     #st.header("Chiffrement Vigenère")
     message = st.text_area("Entrez le message à chiffrer :", "")
     cle = st.text_input("Entrez la clé de chiffrement :", "")
@@ -183,7 +183,7 @@ if operation == "Chiffrement":
             st.error("Veuillez entrer un message et une clé.")
 
 elif operation == "Déchiffrement (Friedman)":
-    st.markdown('<h2 style="color: #E4F1AC;">Déchiffrement avec la méthode de Friedman</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 style="color: #CC2B52;">Déchiffrement avec la méthode de Friedman</h2>', unsafe_allow_html=True)
     #st.header("Déchiffrement avec la méthode de Friedman")
     message = st.text_area("Entrez le message chiffré :", "")
     if st.button("Déchiffrer"):
@@ -203,7 +203,7 @@ elif operation == "Déchiffrement (Friedman)":
             st.error("Veuillez entrer un message chiffré.")
 
 elif operation == "Déchiffrement (Babbage)":
-    st.markdown('<h2 style="color: #A7D477;">Déchiffrement avec la méthode de Babbage</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 style="color: #C75B7A;">Déchiffrement avec la méthode de Babbage</h2>', unsafe_allow_html=True)
     #st.header("Déchiffrement avec la méthode de Babbage")
     ciphertext = st.text_area("Entrez le texte chiffré :", "").replace(" ", "").upper()
     if st.button("Déchiffrer"):
