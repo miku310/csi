@@ -270,7 +270,7 @@ st.markdown('<h1 style="color: #740938; font-size: 36px; text-align: center;">Ch
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    st.image("images.jpg", caption="Principes de base de la cryptographie", use_column_width=True)
+    st.image("images.jpg", caption="Principes de base de la cryptographie", use_container_width=True)
 
 # Description de l'application
 st.markdown(
